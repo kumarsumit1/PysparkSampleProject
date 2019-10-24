@@ -11,7 +11,7 @@ source $PWD/pyvenv/bin/activate
 
 python3 -V
 
-python3 -m unittest discover
+python -m unittest discover
 
 pex --no-wheel --disable-cache -i conf/pip.conf -e module.main:main -r requirement.txt -o module.pex .
 
